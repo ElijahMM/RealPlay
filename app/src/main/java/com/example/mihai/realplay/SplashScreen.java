@@ -2,7 +2,6 @@ package com.example.mihai.realplay;
 
 import android.app.Activity;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 
@@ -20,7 +19,7 @@ public class SplashScreen extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Util.openActivityClosingParent(SplashScreen.this, MainActivity.class);
+                Util.openActivityClosingParent(SplashScreen.this, LoginActivity.class);
             }
         }, SPLASH_SCREEN_DURATION);
     }
